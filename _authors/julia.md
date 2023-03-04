@@ -1,4 +1,5 @@
 ---
+layout: default
 short_name: julia
 name: Julia Bosnic
 position: Writer

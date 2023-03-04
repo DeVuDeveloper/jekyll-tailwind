@@ -1,4 +1,5 @@
 ---
+layout: default
 short_name: marko
 name: Marko Jovic
 position: Chief Editor
