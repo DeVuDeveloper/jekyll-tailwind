@@ -3,4 +3,24 @@
 
 @tailwind base;
 @tailwind components;
-@tailwind utilities;;
+@tailwind utilities;
+
+.object-fit-fill {
+  object-fit: fill;
+}
+
+.object-fit-contain {
+  object-fit: contain;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.object-fit-none {
+  object-fit: none;
+}
+
+.object-fit-scale-down {
+  object-fit: scale-down;
+}
