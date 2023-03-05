@@ -17,12 +17,15 @@ title: Blog
     <div class="flex justify-between items-center mb-2">
       <div class="flex items-center">
         <p class="inline-flex items-center mr-3 text-sm text-gray-900
-          dark:text-white"><img
+          ">
+        <img
             class="mr-2 w-6 h-6 rounded-full"
-            src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
-            alt="Michael Gough"><a href="{{ post.url }}">{{
-            post.author}}</a></p>
+            src="{{post.image}}"
+            alt="author">
+
+        <a class="text-cyan-500" href="{{ post.url }}">{{post.author}}</a></p>
         <p class="text-sm text-gray-600 dark:text-gray-400"><time>{{ post.date | date_to_string }}</time></p>
+
       </div>
 
 
@@ -33,3 +36,7 @@ title: Blog
   </article>
   {% endfor %}
 </div>
+
+
+
+
