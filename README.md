@@ -10,7 +10,7 @@
 
   <p align="center">
    
-  <a href="https://github.com/DeVuDeveloper/jekyll-tailwind.#readme"><strong>Explore the docs!»</strong></a>
+  <a href="https://github.com/DeVuDeveloper/jekyll-tailwind.#readme"><strong>Explore the docs*»</strong></a>
     <br />
     <br />
     ·
