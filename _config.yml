@@ -1,6 +1,5 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
-title: "" # the name of your site, e.g. ACME Corp.
+baseurl: "/" # the subpath of your site, e.g. /blog
+title: "Playstation 5" # the name of your site, e.g. ACME Corp.
 
 plugins:
   - jekyll-postcss
@@ -28,4 +27,21 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - yarn.lock
+  - package.json
+  - package-lock.json
+  - vendor
+  - LICENSE.md
+  - README.md
+  - .vscode
+  - .gitignore
+  - .liquidrc
+  - postcss.config.js
+  - tailwind.config.js
+  - netlify.toml
 
