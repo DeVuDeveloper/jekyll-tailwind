@@ -69,11 +69,10 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  jekyll
+  jekyll (~> 4.1)
   jekyll-environment-variables
   jekyll-postcss
   jekyll-seo-tag
-  webrick
 
 BUNDLED WITH
    2.4.7

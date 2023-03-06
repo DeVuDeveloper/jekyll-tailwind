@@ -1,16 +1,20 @@
 module.exports = {
-  content: [
-    './_drafts/**/*.html',
-    './_includes/**/*.html',
-    './_layouts/**/*.html',
-    './_posts/*.md',
-    './*.md',
-    './*.html'
-  ],
+  purge: ["./_includes/**/*.html", "./_layouts/**/*.html", "./blog/*.html", "./_posts/*.html", "./*.html"],
+  darkMode: false,
   theme: {
-    theme: {
-      extend: {}
-    }
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+    },
   },
-  plugins: []
-}
+  variants: {
+    extend: {
+      grayscale: ["hover", "focus"],
+      margin: ["last"],
+    },
+    container: [],
+  },
+};
+

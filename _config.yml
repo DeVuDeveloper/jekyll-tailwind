@@ -2,11 +2,9 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 title: "Playstation 5" # the name of your site, e.g. ACME Corp.
 
 plugins:
+  - jekyll-environment-variables
   - jekyll-postcss
-  - jekyll-seo-tag
 
-postcss:
-  cache: false
 
 collections:
   authors:
