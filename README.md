@@ -32,7 +32,7 @@ Playstation 5 is a mini project. The website was built with Jekyll and Tailwind 
 
 ## Live Demo
 
-([Live preview]())
+([Live preview](https://jekill-practice.netlify.app/))
 
 ## Getting Started 🏁
 
