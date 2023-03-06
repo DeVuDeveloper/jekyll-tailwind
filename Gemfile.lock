@@ -36,8 +36,6 @@ GEM
     jekyll-postcss (0.5.0)
     jekyll-sass-converter (3.0.0)
       sass-embedded (~> 1.54)
-    jekyll-seo-tag (2.8.0)
-      jekyll (>= 3.8, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     kramdown (2.4.0)
@@ -72,7 +70,6 @@ DEPENDENCIES
   jekyll (~> 4.1)
   jekyll-environment-variables
   jekyll-postcss
-  jekyll-seo-tag
 
 BUNDLED WITH
    2.4.7
