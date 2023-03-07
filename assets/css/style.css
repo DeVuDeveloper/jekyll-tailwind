@@ -1,0 +1,43 @@
+---
+---
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.object-fit-fill {
+  object-fit: fill;
+}
+
+.object-fit-contain {
+  object-fit: contain;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.object-fit-none {
+  object-fit: none;
+}
+
+.object-fit-scale-down {
+  object-fit: scale-down;
+}
+
+.bg-color-navbar {
+  background-color: #06b8b8;
+}
+
+.bg-color-footer {
+  background-color: #0acfcf;
+}
+
+.text-link {
+  color: #08caca;
+}
+
+.active {
+  color:#f3ad7e;
+  font-size:18px;
+}
