@@ -1,5 +1,5 @@
-baseurl: "jekyll-tailwind" # the subpath of your site, e.g. /blog
-url: "https://github.com/DeVuDeveloper"
+baseurl: "/" # the subpath of your site, e.g. /blog
+
 title: "Playstation 5" # the name of your site, e.g. ACME Corp.
 
 google_analytics_id: G-N0T10MB1ZK
