@@ -9,8 +9,6 @@ short_description: Hello, PlayStation fans! With great pleasure, we want to
 author: david
 ---
 
-
-```html
 <section class="dark:bg-gray-800 dark:text-gray-100">
 	<div class="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
 		<a rel="noopener noreferrer" href="#" class="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900">
@@ -76,4 +74,3 @@ author: david
 		</div>
 	</div>
 </section>
-```
