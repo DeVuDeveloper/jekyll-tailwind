@@ -24,7 +24,7 @@ title: Blog
         <p class="text-sm text-gray-600 dark:text-gray-400"><time>{{ post.date | date_to_string }}</time></p>
       </div>
     </div>
-    {{ post.excerpt }}<a class=" text-link text-cyan-500" href="{{ post.url }}">read more...</a>
+    {{ post.short_description }}<a class=" text-link text-cyan-500" href="{{ post.url }}"><br/>read more...</a>
   </article>
   {% endfor %}
 </div>
