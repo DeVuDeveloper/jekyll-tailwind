@@ -1,7 +1,19 @@
+# development:
+#   backend:
+#     name: netlify-api
+#     url: http://localhost:4000
+
+# production:
+#   backend:
+#     name: github-api
+#     repo: owner/repo # Path to your GitHub repository
+#     branch: new-features # Branch to update (master by default)
+
 backend:
   name: git-gateway
   branch: new-features # Branch to update (optional; defaults to master)
-media_folder: "assets/uploads"
+
+media_folder: "assets/images/uploads"
 collections:
   - name: "blog"
     label: "Blog"
@@ -14,9 +26,9 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Short Description", name: "short_description", widget: "string" }
+      - { label: "Short Description", name: "short_description", widget: "image" }
       - { label: "Description", name: "description", widget: "string" }
-      - { label: "Image", name: "image", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
       - { label: "Figcaption", name: "figcaption", widget: "string" }
       - {
           label: "Author",
@@ -27,6 +39,7 @@ collections:
           searchFields: [display_name],
           valueField: "name",
         }
+      - { label: "Body", name: "body", widget: "markdown" }
     
   - name: "authors"
     label: "Authors"
