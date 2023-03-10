@@ -5,6 +5,9 @@ google_analytics_id: G-N0T10MB1ZK
 
 plugins:
   - jekyll-postcss
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
 
 postcss:
   cache: false

@@ -27,7 +27,7 @@ collections:
           searchFields: [display_name],
           valueField: "name",
         }
-      - { label: "Body", name: "body", widget: "markdown" }
+    
   - name: "authors"
     label: "Authors"
     folder: "_authors/"
@@ -39,7 +39,8 @@ collections:
       - { label: "Short Name", name: "name", widget: "string" }
       - { label: "Diplay Name", name: "display_name", widget: "string" }
       - { label: "Position", name: "position", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Image", name: "image", widget: "string" }
+     
   - name: "pages"
     label: "Pages"
     editor:
