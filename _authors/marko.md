@@ -7,4 +7,3 @@ image: /assets/images/author/marko.png
 title: New PS5 system software update is out globally today
 ---
 
-Marko is an avid fruit grower based in the south of Serbia.

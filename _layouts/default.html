@@ -2,7 +2,7 @@
 <html lang='{{ site.lang | default: "en-US" }}'>
 
 <head>
-  <link rel="icon" type="image/x-icon" href="/favicon.png" />
+ 
   {% include head.html %}
 </head>
 
@@ -10,6 +10,7 @@
   {% include navigation.html %}
   {{ content }}
   {% include footer.html %}
+  {% include google-analytics.html %}
   <script type="text/javascript" src="{{ '/assets/js/hamburger.js' | relative_url }}"></script>
 </body>
 
