@@ -16,4 +16,3 @@ image: https://blog.playstation.com/tachyon/2023/02/1290ce089ad6cab4166888b023c1
 figcaption: Journey to Foundation
 author: julia
 ---
-<﻿div><div>
