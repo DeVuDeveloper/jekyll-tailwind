@@ -44,73 +44,45 @@ collections:
       - label: "About Page"
         name: "about"
         file: "about.md"
-        fields:
-          - {
-              label: "Title",
-              name: "title",
-              widget: "hidden",
-              default: "about",
-            }
-          - {
-              label: "Layout",
-              name: "layout",
-              widget: "hidden",
-              default: "about",
-            }
-          - { label: "Body", name: "body", widget: "markdown" }
-     files:
       - label: "Accessories Page"
         name: "accessories"
         file: "accessories.html"
-        fields:
-          - {
-              label: "Title",
-              name: "title",
-              widget: "hidden",
-              default: "accessories",
-            }
-          - {
-              label: "Layout",
-              name: "layout",
-              widget: "hidden",
-              default: "accessories",
-            }
-          - { label: "Body", name: "body", widget: "markdown" }
-    files:
+      - label: "Accessories Page"
+        name: "accessories"
+        file: "accessories.html"
       - label: "Team Page"
         name: "team"
         file: "team.html"
-        fields:
-          - {
-              label: "Title",
-              name: "title",
-              widget: "hidden",
-              default: "team",
-            }
-          - {
-              label: "Layout",
-              name: "layout",
-              widget: "hidden",
-              default: "team",
-            }
-          - { label: "Body", name: "body", widget: "markdown" }
-
-    files:
       - label: "Contact Page"
         name: "contact"
         file: "contact.html"
+        
         fields:
           - {
               label: "Title",
               name: "title",
               widget: "hidden",
-              default: "contact",
+              default: "about",
             }
           - {
               label: "Layout",
               name: "layout",
               widget: "hidden",
-              default: "contact",
+              default: "about",
+            }
+          - { label: "Body", name: "body", widget: "markdown" }
+     
+          - {
+              label: "Title",
+              name: "title",
+              widget: "hidden",
+              default: "accessories",
+            }
+          - {
+              label: "Layout",
+              name: "layout",
+              widget: "hidden",
+              default: "accessories",
             }
           - { label: "Body", name: "body", widget: "markdown" }
   - name: "config"
