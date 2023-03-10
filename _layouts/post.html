@@ -12,7 +12,7 @@ layout: default
         lg:format-lg format-blue dark:format-invert">
        
  
-  {% assign author = site.authors | where: 'short_name', page.author | first%}
+  {% assign author = site.authors | where: 'name', page.author | first%}
 
   {% if author %}
 
@@ -25,7 +25,7 @@ layout: default
         alt="author">
       <div>
         <p class="text-xl font-bold text-gray-900
-          dark:text-white">{{ author.name }}</p>
+          dark:text-white">{{ author.display_name }}</p>
         <p class="text-base font-light text-gray-500 dark:text-gray-400">
           {{author.position}}</p>
         <p class="text-base font-light text-gray-500 dark:text-gray-400">
