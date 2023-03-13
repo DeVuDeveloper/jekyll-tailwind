@@ -47,17 +47,6 @@ You will be needing:
   ```bash
   https://www.ruby-lang.org/en/documentation/installation/
   ```
-- Rails (follow the instructions based on your OS)
-
-  ```bash
-  https://guides.rubyonrails.org/getting_started.html#creating-a-new-rails-project-installing-rails
-  ```
-
-- Postgresql (follow the instructions based on your OS)
-  ```bash
-  https://www.postgresql.org/download/
-  ```
-
 ### Clone this repository
 
 ```bash
