@@ -1,0 +1,128 @@
+# development:
+#   backend:
+#     name: netlify-api
+#     url: http://localhost:4000
+
+# production:
+#   backend:
+#     name: github-api
+#     repo: owner/repo # Path to your GitHub repository
+#     branch: new-features # Branch to update (master by default)
+
+backend:
+  name: git-gateway
+  branch: new-features # Branch to update (optional; defaults to master)
+
+media_folder: "assets/images/uploads"
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "_posts/"
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    editor:
+      preview: false
+    fields: # The fields for each document, usually in front matter
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Short Description", name: "short_description", widget: "string"}
+      - { label: "Description", name: "description", widget: "string", required: false}
+      - { label: "Image", name: "image", widget: "image", required: false}
+      - { label: "Figcaption", name: "figcaption", widget: "string", required: false}
+      - {
+          label: "Author",
+          name: "author",
+          widget: "relation",
+          collection: "authors",
+          displayFields: [display_name],
+          searchFields: [display_name],
+          valueField: "name",
+        }
+      - { label: "Body", name: "body", widget: "markdown", required: false}
+    
+  - name: "authors"
+    label: "Authors"
+    folder: "_authors/"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "author" }
+      - { label: "Short Name", name: "name", widget: "string" }
+      - { label: "Diplay Name", name: "display_name", widget: "string"}
+      - { label: "Position", name: "position", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+     
+  - name: "pages"
+    label: "Pages"
+    editor:
+      preview: false
+    files:
+      - label: "Accessories Page"
+        name: "accessories"
+        file: "accessories.html"
+        fields:
+          - {
+              label: "Title",
+              name: "title",
+              widget: "hidden",
+              default: "about",
+            }
+          - {
+              label: "Layout",
+              name: "layout",
+              widget: "hidden",
+              default: "about",
+            }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Team Page"
+        name: "team"
+        file: "team.html"
+        fields:
+          - {
+              label: "Title",
+              name: "title",
+              widget: "hidden",
+              default: "about",
+            }
+          - {
+              label: "Layout",
+              name: "layout",
+              widget: "hidden",
+              default: "about",
+            }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Contact Page"
+        name: "contact"
+        file: "contact.html"
+        fields:
+          - {
+              label: "Title",
+              name: "title",
+              widget: "hidden",
+              default: "about",
+            }
+          - {
+              label: "Layout",
+              name: "layout",
+              widget: "hidden",
+              default: "about",
+            }
+          - { label: "Body", name: "body", widget: "markdown" }
+        
+  - name: "config"
+    label: "Config"
+    editor:
+      preview: false
+    files:
+      - label: "Navigation"
+        name: "navigation"
+        file: "_data/navigation.yml"
+        fields:
+          - label: "Navigation Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Link, name: link, widget: string }

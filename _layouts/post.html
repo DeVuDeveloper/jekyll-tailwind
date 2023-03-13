@@ -2,21 +2,14 @@
 layout: default
 ---
 
+{% assign author = site.authors | where: 'name', page.author | first%}
+{% if author %}
+
 <section class="mt-20 mb-20">
-
-
-
-  <section class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900">
+  <div class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900">
     <div class="flex justify-between px-4 mx-auto max-w-screen-xl ">
       <article class="mx-auto w-full max-w-2xl format format-sm sm:format-base
         lg:format-lg format-blue dark:format-invert">
-       
- 
-  {% assign author = site.authors | where: 'short_name', page.author | first%}
-
-  {% if author %}
-
-
   <div class="flex items-center mb-6 not-italic">
     <div class="inline-flex items-center mr-3 text-sm text-gray-900
       dark:text-white">
@@ -25,7 +18,7 @@ layout: default
         alt="author">
       <div>
         <p class="text-xl font-bold text-gray-900
-          dark:text-white">{{ author.name }}</p>
+          dark:text-white">{{ author.display_name }}</p>
         <p class="text-base font-light text-gray-500 dark:text-gray-400">
           {{author.position}}</p>
         <p class="text-base font-light text-gray-500 dark:text-gray-400">
@@ -33,16 +26,27 @@ layout: default
       </div>
     </div>
   </div>
-  {% endif %}
+ 
   <header class="mb-4 lg:mb-6 not-format">
          
     <h1 class="mb-4 text-3xl font-extrabold leading-tight text-gray-900
-      lg:mb-6 lg:text-4xl dark:text-white">{{author.title}}</h1>
+      lg:mb-6 lg:text-4xl dark:text-white">{{page.title}}</h1>
   </header>
 
 
-  {{ content }}
+  <h2>{{page.short_description}}</h2>
 
-
-
+  <div class="mt-8 overflow-y-auto">
+        <figure><img
+            src="{{page.image}}"
+            alt="">
+          <figcaption class="text-xl mt-8 font-bold">{{page.figcaption}}</figcaption>
+        </figure>
+        <h2 class="mt-2 mb-20">{{page.description}}</h2>
+        {{ content }}
+  </div>
+</article>
+  </div>
+  </div>
 </section>
+{% endif %}

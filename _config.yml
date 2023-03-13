@@ -1,8 +1,14 @@
 baseurl: "/" # the subpath of your site, e.g. /blog
+
 title: "Playstation 5" # the name of your site, e.g. ACME Corp.
+
+google_analytics_id: G-N0T10MB1ZK
 
 plugins:
   - jekyll-postcss
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
 
 postcss:
   cache: false
