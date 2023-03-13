@@ -33,7 +33,7 @@ User can edit all web pages and posts with form or markdown.
 
 ## Live Demo
 
-([Live preview](https://jekyll-practice.netlify.app/)
+([Live preview](https://jekyll-practice.netlify.app/))
 
 ## Getting Started 🏁
 
