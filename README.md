@@ -26,7 +26,8 @@
 
 
 ## Description 🏗️
-Playstation 5 is a mini project. The website was built with Jekyll and Tailwind CSS
+Playstation 5 is a mini project made by Jekyll with Tailwind CSS. Project is deployed on Netlify, also netlify csm is installed.
+User can edit all web pages and posts with form or markdown.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
